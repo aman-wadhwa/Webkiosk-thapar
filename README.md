@@ -75,9 +75,3 @@ This will start the mock JSON server.
 
 ## Styling
 We use **Tailwind CSS** for utility-first styling and **DaisyUI**, a Tailwind CSS plugin, for easily styled components. You can customize the UI components as needed using these libraries.
-
-## How to Contribute
-Feel free to fork the repository and submit pull requests. Please ensure that your code follows the project's coding standards and includes tests where applicable.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
