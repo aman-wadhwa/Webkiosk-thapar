@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WebKiosk Data Retriever
 
-## Available Scripts
+This project retrieves data from the WebKiosk using login credentials and displays it in a more user-friendly interface. It tracks previously logged-in users via a mock JSON server and fetches requests for new users using web scraping techniques. Puppeteer is used for scraping and retrieving data in a Node.js environment. The frontend and backend are connected using an Express server, and the retrieved data is posted to a mock JSON server.
 
-In the project directory, you can run:
+## Features
+- Retrieves data from the WebKiosk using login credentials.
+- Displays the data in a simplified, easy-to-use UI.
+- Keeps track of previous users using a mock JSON server.
+- Fetches requests for new users using Puppeteer for scraping.
+- Uses Node.js for the backend (Express server).
+- Integrates React for the frontend.
+- Styling with Tailwind CSS and DaisyUI for enhanced UI components.
 
-### `npm start`
+## Technologies Used
+- **Node.js**: Backend server for scraping and API integration.
+- **Puppeteer**: Web scraping tool for retrieving WebKiosk data.
+- **Express.js**: Server framework to handle backend requests.
+- **React**: Frontend library for building the user interface.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **DaisyUI**: Component library built on top of Tailwind CSS for easy UI components.
+- **Mock JSON Server**: Simulates a backend for tracking users and storing data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend (Node.js + Express)
+To run the backend server, you need to execute the following commands:
 
-### `npm test`
+1. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Start the Express server:
+   ```bash
+   node server.js
+   ```
 
-### `npm run build`
+   This will start the Express server that serves the backend and handles the requests.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend (React + Tailwind CSS + DaisyUI)
+To run the frontend server, you need to execute the following commands:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Install the dependencies for the frontend:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Start the React app:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   This will start the development server and open the React app in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Mock JSON Server
+To start the mock JSON server for tracking users and storing data, you need to run the following command in a separate terminal window:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run server
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will start the mock JSON server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
+```
+├── backend/
+│   └── server.js           # Express server for backend logic
+├── frontend/
+│   ├── src/                # React source files
+│   ├── public/             # Public assets
+│   └── tailwind.config.js  # Tailwind CSS configuration
+└── mock-server/            # Mock JSON server for data storage
+```
 
-## Learn More
+## Styling
+We use **Tailwind CSS** for utility-first styling and **DaisyUI**, a Tailwind CSS plugin, for easily styled components. You can customize the UI components as needed using these libraries.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Contribute
+Feel free to fork the repository and submit pull requests. Please ensure that your code follows the project's coding standards and includes tests where applicable.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

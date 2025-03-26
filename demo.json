@@ -1,0 +1,28 @@
+{
+    
+    "name" : "aman",
+    "roll" : "102303550",
+    "branch" : "coe",
+    "current_semester" : "4",
+    "avg_cgpa" : "9.15",
+    "semester" : {
+        "1" : {
+            "sgpa" : "9.33",
+            "subjects" : {
+                "DATA STRUCTURES(UCS301)" : {
+                    "marks" : "78.56",
+                    "grade" : "A",
+                    "marks_grid" : {
+                        "mst" : {
+                            "obtained" : "30",
+                            "outof" : "45"
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+}
