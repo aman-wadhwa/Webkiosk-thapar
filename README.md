@@ -54,7 +54,7 @@ To run the frontend server, you need to execute the following commands:
    This will start the development server and open the React app in your browser.
 
 ### Mock JSON Server
-To start the mock JSON server for tracking users and storing data, you need to run the following command in a separate terminal window:
+The mock JSON server is inside the `frontend` folder. To start it for tracking users and storing data, you need to run the following command in a separate terminal window:
 
 ```bash
 npm run server
@@ -69,9 +69,12 @@ This will start the mock JSON server.
 ├── frontend/
 │   ├── src/                # React source files
 │   ├── public/             # Public assets
-│   └── tailwind.config.js  # Tailwind CSS configuration
-└── mock-server/            # Mock JSON server for data storage
+│   ├── tailwind.config.js  # Tailwind CSS configuration
+│   └── mock-server/        # Mock JSON server for data storage
+
 ```
 
 ## Styling
 We use **Tailwind CSS** for utility-first styling and **DaisyUI**, a Tailwind CSS plugin, for easily styled components. You can customize the UI components as needed using these libraries.
+
+
